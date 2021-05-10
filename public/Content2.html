@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vue3 Exercise II</title>
+<script src="https://unpkg.com/vue@next"></script>
+<style>
+ 
+</style>
+</head>
+<body>
+ Look F12 debug mode
+<div id="content"></div> 
+<script>
+const app = Vue.createApp({
+  data: () => ({ to: 'World' }),
+  template: '<hello v-bind:to="to"></hello>'
+});
+
+// Prints 'Mounted from component!' followed by 'Mounted from setup!'
+app.component('hello', {
+  props: ['to'],
+  template: '<h1>Hello, {{to}}</h1>',
+  mounted: function() {
+    console.log('->Mounted from component!');
+  },
+  setup: function(props) {
+    Vue.onMounted(() => console.log('->Mounted from setup!'));
+    return {};
+  }
+});
+app.mount('#content');
+</script>
+</body>
+</html>

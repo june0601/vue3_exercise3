@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vue3 Exercise III</title>
+<script src="https://unpkg.com/vue@next"></script>
+<style>
+ 
+</style>
+</head>
+<body>
+
+<div id="app">
+  <my-component class="baz"></my-component>
+</div>   
+
+<script>
+const app = Vue.createApp({})
+
+app.component('my-component', {
+  template: `
+    <p :class="$attrs.class">Hi!</p>
+    <span>This is a child component</span>
+  `
+})
+app.mount('#app')
+</script>
+</body>
+</html>
