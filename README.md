@@ -133,8 +133,62 @@ https://learnvue.co/
 https://www.bacancytechnology.com/blog/vue3-typescript
 ```
 ```
+在Vue3中進行路由：瀏覽選項
+https://www.codemag.com/Article/2101051/Routing-in-Vue3-Navigating-the-Options
+```
+```
+使用Vue 3，Socket.io和Nodejs構建實時聊天應用程序
+https://masteringbackend.com/posts/build-a-real-time-chat-app-with-vue-3-socket-io-and-nodejs
+```
+```
+2021新年 Vue3.0 + Element UI 嘗鮮小記
+https://segmentfault.com/a/1190000038873705
+```
+```
+使用Vuex和Vue路由器進行Vue.js JWT身份驗證
+https://bezkoder.com/jwt-vue-vuex-authentication/
+```
+```
+Amplify JavaScript版本對Vue 3的支持
+https://aws.amazon.com/tw/blogs/mobile/amplify-javascript-releases-support-for-vue-3/
+```
+```
+Vuetify UI
+https://vuetifyjs.com/en/introduction/why-vuetify/
+```
+```
+僅需5分鐘即可構建Vue 3桌面應用程序
+https://betterprogramming.pub/build-vue-3-desktop-apps-in-just-5-minutes-vite-electron-quick-start-guide-804dfc53b30a
+```
+```
+開發人員的網絡技術
+https://developer.mozilla.org/en-US/docs/Web
+```
+```
+
+```
+```
 
 ```
 ```
 
 ```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+
