@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo7</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app"></div>
+</body>
+<script>
+    const app = Vue.createApp({
+        data() {
+            return {
+                title: 'Look F12 debug mode (↓click \'jspang.com\')',
+                message: 'jspang.com'
+            }
+        },
+        methods: {
+            handleItemClick() {
+                this.message = this.message == 'jspang.com' ? "技術胖" : "jspang.com"
+            }
+        },
+        template: "<h2>{{title}}</h2><h2 v-on:click='handleItemClick'>{{message}}</h2>",
+        beforeUpdate() {
+            console.log('beforeUpdate')
+            console.log(document.getElementById('app').innerHTML)
+        },
+        updated() {
+            console.log('updated')
+            console.log(document.getElementById('app').innerHTML)
+        },
+        created() {
+            console.log('created')
+        },
+        beforeUnmount() {
+            console.log('beforeUnmount')
+            console.log(document.getElementById('app').innerHTML)
+        },
+        unmounted() {
+            console.log('unmounted')
+            console.log(document.getElementById('app').innerHTML)
+        },
+    })
+    const vm = app.mount("#app")
+
+</script>
+
+</html>

@@ -14,6 +14,7 @@
     <h2 @click="changeName">{{name}}</h2>
     <h2 @click="add">3+6 = {{num}}</h2>
   </div>
+  <hr>
 </template>
 
 <script>
@@ -36,7 +37,7 @@ export default {
     Parent,
     ProductList,
     SimpleCalculator,
-    Head
+    Head,
   },
   mounted () {
     alert(this.$refs.Head.msg)

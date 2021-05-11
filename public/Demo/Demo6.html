@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo6</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app"></div>
+</body>
+<script>
+    const app = Vue.createApp({
+        data() {
+            return {
+                title: 'Look F12 debug mode',
+                message: 'jspang.com'
+
+            }
+        },
+        template: "<h2>{{title}}</h2><h2>{{message}}</h2>"
+    })
+    const vm = app.mount("#app")
+    console.log(vm)
+    //當我們獲取了vm根節點後，其實就可以操作裡邊的數據了。比如在控制台中輸入下面的代碼：
+    //vm.$data.message ='技術胖'
+    //這個時候你會發現網頁界面也跟著發生了變化，變成了技術胖.
+</script>
+
+</html>
